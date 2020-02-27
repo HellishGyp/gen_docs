@@ -13,6 +13,6 @@ context = {'company': "CompanyName",
            'emp_initials': "Инициалы_1",
            'date': now}
 name, time, = context['emploee_name'], context['date'],
-header = f'{type}-{name}'
+header = f'{name}-{time}'
 doc.render(context)
 doc.save(header + '.docx')
